@@ -1,0 +1,61 @@
+{
+    "name": "playwright-php/devices",
+    "description": "Playwright device descriptors in PHP (mobile & desktop screens, user agents, viewports, scale factors, touch/mobile flags).",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "playwright",
+        "devices",
+        "browsers",
+        "user-agent",
+        "descriptors",
+        "mobile",
+        "tablet",
+        "desktop",
+        "emulation",
+        "viewport"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com",
+            "homepage": "https://github.com/smnandre"
+        },
+        {
+            "name": "Playwright PHP Contributors",
+            "homepage": "https://github.com/playwright-php/playwright"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.40",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.3"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Playwright\\Device\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Playwright\\Device\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "thanks": {
+            "name": "playwright-php/playwright",
+            "url": "https://github.com/playwright-php/playwright"
+        }
+    }
+}
