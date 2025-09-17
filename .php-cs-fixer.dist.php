@@ -1,9 +1,13 @@
 <?php
 
 $license = <<<LICENSE
-This file is part of the Playwright PHP community project.
-For the full copyright and license information, please view
-the LICENSE file that was distributed with this source code.
+This file is part of the community-maintained Playwright PHP project.
+It is not affiliated with or endorsed by Microsoft.
+
+(c) 2025-Present - Playwright PHP <https://github.com/playwright-php>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
 LICENSE;
 
 $finder = (new PhpCsFixer\Finder())

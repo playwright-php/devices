@@ -1,0 +1,33 @@
+name: Update descriptors
+
+on:
+  # schedule:
+  #  - cron: '0 2 * * *' # Every night at 02:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: composer
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Update device descriptors
+        run: php bin/update.php
+
+      - name: Convert descriptors in PHP
+        run: php bin/converter.php
+
+      - name: Update markdown files
+        run: php bin/update-docs.php

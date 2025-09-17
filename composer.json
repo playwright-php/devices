@@ -23,7 +23,7 @@
         },
         {
             "name": "Playwright PHP Contributors",
-            "homepage": "https://github.com/playwright-php/playwright"
+            "homepage": "https://github.com/playwright-php"
         }
     ],
     "require": {

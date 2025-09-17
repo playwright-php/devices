@@ -3,14 +3,29 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the Playwright PHP community project.
- * For the full copyright and license information, please view
- * the LICENSE file that was distributed with this source code.
+ * This file is part of the community-maintained Playwright PHP project.
+ * It is not affiliated with or endorsed by Microsoft.
+ *
+ * (c) 2025-Present - Playwright PHP <https://github.com/playwright-php>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Playwright\Device;
 
 /**
+ * @phpstan-type DeviceDescriptor array{
+ *   ua: string,
+ *   dbt: string,
+ *   sc?: array{0:int, 1:int},
+ *   vp: array{0:int, 1:int},
+ *   vp_l?: array{0:int, 1:int},
+ *   sf: float,
+ *   m?: bool,
+ *   t?: bool,
+ * }
+ *
  * @author Simon André <smn.andre@gmail.com>
  */
 final class Device
@@ -105,5 +120,33 @@ final class Device
     public function isMobile(): bool
     {
         return $this->isMobile;
+    }
+
+    /**
+     * Returns the device descriptor as an array.
+     *
+     * @return array{
+     *   name: string,
+     *   userAgent: string,
+     *   defaultBrowserType: string,
+     *   screen: array{width: int, height: int}|null,
+     *   viewport: array{width: int, height: int}|null,
+     *   deviceScaleFactor: float,
+     *   isMobile: bool,
+     *   hasTouch: bool
+     * }
+     */
+    public function toArray(): array
+    {
+        return [
+            'name' => $this->name,
+            'userAgent' => $this->userAgent,
+            'defaultBrowserType' => $this->defaultBrowserType,
+            'screen' => $this->screen,
+            'viewport' => $this->getViewport(),
+            'deviceScaleFactor' => $this->deviceScaleFactor,
+            'isMobile' => $this->isMobile,
+            'hasTouch' => $this->hasTouch,
+        ];
     }
 }
