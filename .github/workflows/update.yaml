@@ -24,10 +24,7 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress
 
       - name: Update device descriptors
-        run: php bin/update.php
-
-      - name: Convert descriptors in PHP
-        run: php bin/converter.php
+        run: php bin/update-devices.php
 
       - name: Update markdown files
         run: php bin/update-docs.php
