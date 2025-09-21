@@ -22,22 +22,27 @@ $outputPath = $rootDir.'/docs/DEVICES.md';
 
 $registry = new DeviceRegistry();
 $devices = $registry->all();
-ksort($devices);
+// Sort devices with desktop first, then mobile (keep current order within each group).
+uasort($devices, function (Device $a, Device $b): int {
+    return [$a->isMobile()] <=> [$b->isMobile()];
+});
 
 $lines = [];
 $lines[] = '# Device Catalogue';
 $lines[] = '';
 $lines[] = 'Generated from Playwright\'s upstream device descriptors ('.date('Y-m-d').').';
 $lines[] = '';
-$lines[] = '| Device | Browser | Viewport | Landscape | Mobile | Touch | Scale |';
-$lines[] = '| --- | --- | --- | --- | --- | --- | --- |';
+$lines[] = '| Device | Browser | Screen | Scale | Viewport | Landscape | Mobile | Touch |';
+$lines[] = '| --- | --- | --- | --- | --- | --- | --- | --- |';
 
 /** @var Device $device */
 foreach ($devices as $device) {
     $portrait = $device->portrait();
     $viewport = formatDimensions($portrait->getViewport());
+    $screen = formatDimensions($device->getScreen());
+    $scale = formatScale($device->getDeviceScaleFactor());
 
-    $landscape = 'n/a';
+    $landscape = '';
     try {
         $landscapeVariant = $portrait->landscape();
         if ($landscapeVariant !== $portrait) {
@@ -48,14 +53,15 @@ foreach ($devices as $device) {
     }
 
     $lines[] = sprintf(
-        '| %s | %s | %s | %s | %s | %s | %s |',
+        '| %s | %s | %s | %s | %s | %s | %s | %s |',
         $device->getName(),
         ucfirst($device->getDefaultBrowserType()),
+        $screen,
+        $scale,
         $viewport,
         $landscape,
         $device->isMobile() ? 'Yes' : 'No',
-        $device->hasTouch() ? 'Yes' : 'No',
-        formatScale($device->getDeviceScaleFactor())
+        $device->hasTouch() ? 'Yes' : 'No'
     );
 }
 
@@ -63,10 +69,10 @@ file_put_contents($outputPath, implode(PHP_EOL, $lines).PHP_EOL);
 
 echo 'Updated '.relativePath($outputPath).PHP_EOL;
 
-function formatDimensions(?array $dimensions): string
+function formatDimensions(?array $dimensions, string $emptyValue = 'n/a'): string
 {
     if (null === $dimensions) {
-        return 'n/a';
+        return $emptyValue;
     }
 
     return sprintf('%d x %d', $dimensions['width'], $dimensions['height']);
