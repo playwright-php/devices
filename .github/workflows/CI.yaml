@@ -81,8 +81,13 @@ jobs:
           coverage: pcov
           tools: phpunit
 
+      # Force PHPUnit 11.5 on PHP 8.2 to keep support for it
+      # https://phpunit.de/supported-versions.html
+      - if: matrix.php-version == '8.2'
+        run: composer require --no-update phpunit/phpunit:^11.5
+
       - name: "Composer: install"
-        run: composer install --prefer-dist --no-interaction --no-progress
+        run: composer update --no-interaction --prefer-dist
 
       - name: "PHPUnit: version"
         run: phpunit --version

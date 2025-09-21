@@ -1,4 +1,4 @@
-name: Update descriptors
+name: "Update devices"
 
 on:
   # schedule:
@@ -21,7 +21,7 @@ jobs:
           tools: composer
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction --no-progress
+        run: composer update --no-interaction --prefer-dist
 
       - name: Update device descriptors
         run: php bin/update-devices.php
