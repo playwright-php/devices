@@ -1,5 +1,6 @@
 /.git*                      export-ignore
 /bin/                       export-ignore
+/data/deviceDe*             export-ignore
 /docs/                      export-ignore
 /tests/                     export-ignore
 /.php-cs-fixer*             export-ignore
