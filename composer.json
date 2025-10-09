@@ -53,6 +53,9 @@
         "sort-packages": true
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "0.x-dev"
+        },
         "thanks": {
             "name": "playwright-php/playwright",
             "url": "https://github.com/playwright-php/playwright"
