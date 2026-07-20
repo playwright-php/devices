@@ -12,7 +12,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-const SOURCE_URL = 'https://raw.githubusercontent.com/microsoft/playwright/main/packages/playwright-core/src/server/deviceDescriptorsSource.json';
+const SOURCE_URL = 'https://raw.githubusercontent.com/microsoft/playwright/main/packages/isomorphic/deviceDescriptorsSource.json';
 
 $rootDir = dirname(__DIR__);
 $jsonPath = $rootDir.'/data/deviceDescriptorsSource.json';
@@ -50,7 +50,6 @@ function downloadDescriptors(string $url): string
         $response = curl_exec($handle);
         $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
         $error = curl_error($handle);
-        curl_close($handle);
 
         if (false === $response || $httpCode >= 400) {
             throw new RuntimeException(sprintf('cURL download failed (HTTP %s): %s', $httpCode ?: 'n/a', $error ?: 'unknown error'));
