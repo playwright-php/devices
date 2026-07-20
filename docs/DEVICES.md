@@ -1,6 +1,6 @@
 # Device Catalogue
 
-Generated from Playwright's upstream device descriptors (2025-09-21).
+Generated from Playwright's upstream device descriptors (2026-07-20).
 
 | Device | Browser | Screen | Scale | Viewport | Landscape | Mobile | Touch |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -23,6 +23,14 @@ Generated from Playwright's upstream device descriptors (2025-09-21).
 | Galaxy S III | Webkit | n/a | 2 | 360 x 640 | 640 x 360 | Yes | Yes |
 | Galaxy Tab S4 | Chromium | n/a | 2.25 | 712 x 1138 | 1138 x 712 | Yes | Yes |
 | Galaxy Tab S9 | Chromium | n/a | 2.5 | 640 x 1024 | 1024 x 640 | Yes | Yes |
+| Galaxy Z Flip 6 | Chromium | 360 x 880 | 3 | 360 x 804 | 828 x 308 | Yes | Yes |
+| Galaxy Z Flip 6 Cover | Chromium | 360 x 374 | 2 | 360 x 298 | 322 x 308 | Yes | Yes |
+| Galaxy Z Flip 7 | Chromium | 360 x 840 | 3 | 360 x 764 | 788 x 308 | Yes | Yes |
+| Galaxy Z Flip 7 Cover | Chromium | 474 x 524 | 2 | 474 x 448 | 472 x 422 | Yes | Yes |
+| Galaxy Z Fold 6 | Chromium | 928 x 1080 | 2 | 928 x 1004 | 1028 x 876 | Yes | Yes |
+| Galaxy Z Fold 6 Cover | Chromium | 484 x 1188 | 2 | 484 x 1112 | 1136 x 432 | Yes | Yes |
+| Galaxy Z Fold 7 | Chromium | 984 x 1092 | 2 | 984 x 1016 | 1040 x 932 | Yes | Yes |
+| Galaxy Z Fold 7 Cover | Chromium | 360 x 840 | 3 | 360 x 764 | 788 x 308 | Yes | Yes |
 | iPad (gen 5) | Webkit | n/a | 2 | 768 x 1024 | 1024 x 768 | Yes | Yes |
 | iPad (gen 6) | Webkit | n/a | 2 | 768 x 1024 | 1024 x 768 | Yes | Yes |
 | iPad (gen 7) | Webkit | n/a | 2 | 810 x 1080 | 1080 x 810 | Yes | Yes |
@@ -54,6 +62,16 @@ Generated from Playwright's upstream device descriptors (2025-09-21).
 | iPhone 15 Plus | Webkit | 430 x 932 | 3 | 430 x 739 | 814 x 380 | Yes | Yes |
 | iPhone 15 Pro | Webkit | 393 x 852 | 3 | 393 x 659 | 734 x 343 | Yes | Yes |
 | iPhone 15 Pro Max | Webkit | 430 x 932 | 3 | 430 x 739 | 814 x 380 | Yes | Yes |
+| iPhone 16 | Webkit | 393 x 852 | 3 | 393 x 659 | 734 x 343 | Yes | Yes |
+| iPhone 16 Plus | Webkit | 430 x 932 | 3 | 430 x 739 | 814 x 380 | Yes | Yes |
+| iPhone 16 Pro | Webkit | 402 x 874 | 3 | 402 x 681 | 756 x 352 | Yes | Yes |
+| iPhone 16 Pro Max | Webkit | 440 x 956 | 3 | 440 x 763 | 838 x 390 | Yes | Yes |
+| iPhone 16e | Webkit | 390 x 844 | 3 | 390 x 651 | 726 x 340 | Yes | Yes |
+| iPhone 17 | Webkit | 402 x 874 | 3 | 402 x 681 | 756 x 352 | Yes | Yes |
+| iPhone 17 Pro | Webkit | 402 x 874 | 3 | 402 x 681 | 756 x 352 | Yes | Yes |
+| iPhone 17 Pro Max | Webkit | 440 x 956 | 3 | 440 x 763 | 838 x 390 | Yes | Yes |
+| iPhone 17e | Webkit | 390 x 844 | 3 | 390 x 651 | 726 x 340 | Yes | Yes |
+| iPhone Air | Webkit | 420 x 912 | 3 | 420 x 719 | 794 x 370 | Yes | Yes |
 | iPhone SE | Webkit | n/a | 2 | 320 x 568 | 568 x 320 | Yes | Yes |
 | iPhone SE (3rd gen) | Webkit | n/a | 2 | 375 x 667 | 667 x 375 | Yes | Yes |
 | iPhone X | Webkit | n/a | 3 | 375 x 812 | 812 x 375 | Yes | Yes |
@@ -78,4 +96,18 @@ Generated from Playwright's upstream device descriptors (2025-09-21).
 | Pixel 4 | Chromium | n/a | 3 | 353 x 745 | 745 x 353 | Yes | Yes |
 | Pixel 4a (5G) | Chromium | 412 x 892 | 2.63 | 412 x 765 | 840 x 312 | Yes | Yes |
 | Pixel 5 | Chromium | 393 x 851 | 2.75 | 393 x 727 | 802 x 293 | Yes | Yes |
+| Pixel 6 | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
+| Pixel 6 Pro | Chromium | 412 x 892 | 3.5 | 412 x 816 | 840 x 360 | Yes | Yes |
+| Pixel 6a | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
 | Pixel 7 | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
+| Pixel 7 Pro | Chromium | 412 x 892 | 3.5 | 412 x 816 | 840 x 360 | Yes | Yes |
+| Pixel 7a | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
+| Pixel 8 | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
+| Pixel 8 Pro | Chromium | 448 x 997 | 3 | 448 x 921 | 945 x 396 | Yes | Yes |
+| Pixel 8a | Chromium | 412 x 915 | 2.63 | 412 x 839 | 863 x 360 | Yes | Yes |
+| Pixel 9 | Chromium | 360 x 808 | 3 | 360 x 732 | 756 x 308 | Yes | Yes |
+| Pixel 9 Pro | Chromium | 427 x 952 | 3 | 427 x 876 | 900 x 375 | Yes | Yes |
+| Pixel 9 Pro XL | Chromium | 448 x 997 | 3 | 448 x 921 | 945 x 396 | Yes | Yes |
+| Pixel 10 | Chromium | 360 x 808 | 3 | 360 x 732 | 756 x 308 | Yes | Yes |
+| Pixel 10 Pro | Chromium | 427 x 952 | 3 | 427 x 876 | 900 x 375 | Yes | Yes |
+| Pixel 10 Pro XL | Chromium | 448 x 997 | 3 | 448 x 921 | 945 x 396 | Yes | Yes |
