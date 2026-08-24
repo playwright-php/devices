@@ -40,7 +40,7 @@ return [
         ],
     ],
     'Desktop Chrome' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 1.0,
         'vp' => [
@@ -55,7 +55,7 @@ return [
         't' => false,
     ],
     'Desktop Chrome HiDPI' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -70,7 +70,7 @@ return [
         't' => false,
     ],
     'Desktop Edge' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36 Edg/151.0.7922.34',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36 Edg/152.0.7977.54',
         'dbt' => 'chromium',
         'sf' => 1.0,
         'vp' => [
@@ -85,7 +85,7 @@ return [
         't' => false,
     ],
     'Desktop Edge HiDPI' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36 Edg/151.0.7922.34',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36 Edg/152.0.7977.54',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -100,7 +100,7 @@ return [
         't' => false,
     ],
     'Desktop Firefox' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0.4) Gecko/20100101 Firefox/152.0.4',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0',
         'dbt' => 'firefox',
         'sf' => 1.0,
         'vp' => [
@@ -115,7 +115,7 @@ return [
         't' => false,
     ],
     'Desktop Firefox HiDPI' => [
-        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0.4) Gecko/20100101 Firefox/152.0.4',
+        'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0',
         'dbt' => 'firefox',
         'sf' => 2.0,
         'vp' => [
@@ -145,7 +145,7 @@ return [
         't' => false,
     ],
     'Galaxy A55' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-A556B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-A556B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.25,
         'vp' => [
@@ -184,7 +184,7 @@ return [
         ],
     ],
     'Galaxy S5' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -197,7 +197,7 @@ return [
         ],
     ],
     'Galaxy S8' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G950U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G950U Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -210,7 +210,7 @@ return [
         ],
     ],
     'Galaxy S9+' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 4.5,
         'vp' => [
@@ -223,7 +223,7 @@ return [
         ],
     ],
     'Galaxy S24' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-S921U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-S921U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -249,7 +249,7 @@ return [
         ],
     ],
     'Galaxy Tab S4' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.1.0; SM-T837A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.1.0; SM-T837A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.25,
         'vp' => [
@@ -262,7 +262,7 @@ return [
         ],
     ],
     'Galaxy Tab S9' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-X710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; SM-X710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.5,
         'vp' => [
@@ -275,7 +275,7 @@ return [
         ],
     ],
     'Galaxy Z Flip 6' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F741U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F741U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -292,7 +292,7 @@ return [
         ],
     ],
     'Galaxy Z Flip 6 Cover' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F741U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F741U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -309,7 +309,7 @@ return [
         ],
     ],
     'Galaxy Z Flip 7' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F761U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F761U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -326,7 +326,7 @@ return [
         ],
     ],
     'Galaxy Z Flip 7 Cover' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F761U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F761U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -343,7 +343,7 @@ return [
         ],
     ],
     'Galaxy Z Fold 6' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F956U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F956U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -360,7 +360,7 @@ return [
         ],
     ],
     'Galaxy Z Fold 6 Cover' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F956U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F956U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -377,7 +377,7 @@ return [
         ],
     ],
     'Galaxy Z Fold 7' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F966U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F966U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -394,7 +394,7 @@ return [
         ],
     ],
     'Galaxy Z Fold 7 Cover' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F966U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; SM-F966U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1125,7 +1125,7 @@ return [
         ],
     ],
     'LG Optimus L70' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LGMS323 Build/KOT49I.MS32310c) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LGMS323 Build/KOT49I.MS32310c) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 1.25,
         'vp' => [
@@ -1138,7 +1138,7 @@ return [
         ],
     ],
     'Microsoft Lumia 550' => [
-        'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36 Edge/14.14263',
+        'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36 Edge/14.14263',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -1151,7 +1151,7 @@ return [
         ],
     ],
     'Microsoft Lumia 950' => [
-        'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36 Edge/14.14263',
+        'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36 Edge/14.14263',
         'dbt' => 'chromium',
         'sf' => 4.0,
         'vp' => [
@@ -1164,7 +1164,7 @@ return [
         ],
     ],
     'Moto G4' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1177,7 +1177,7 @@ return [
         ],
     ],
     'Nexus 4' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -1190,7 +1190,7 @@ return [
         ],
     ],
     'Nexus 5' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1203,7 +1203,7 @@ return [
         ],
     ],
     'Nexus 5X' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5X Build/OPR4.170623.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5X Build/OPR4.170623.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1216,7 +1216,7 @@ return [
         ],
     ],
     'Nexus 6' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 7.1.1; Nexus 6 Build/N6F26U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 7.1.1; Nexus 6 Build/N6F26U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.5,
         'vp' => [
@@ -1229,7 +1229,7 @@ return [
         ],
     ],
     'Nexus 6P' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 6P Build/OPP3.170518.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Nexus 6P Build/OPP3.170518.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.5,
         'vp' => [
@@ -1242,7 +1242,7 @@ return [
         ],
     ],
     'Nexus 7' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7 Build/MOB30X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7 Build/MOB30X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -1255,7 +1255,7 @@ return [
         ],
     ],
     'Nexus 10' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 10 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 10 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.0,
         'vp' => [
@@ -1294,7 +1294,7 @@ return [
         ],
     ],
     'Pixel 2' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1307,7 +1307,7 @@ return [
         ],
     ],
     'Pixel 2 XL' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.5,
         'vp' => [
@@ -1320,7 +1320,7 @@ return [
         ],
     ],
     'Pixel 3' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 9; Pixel 3 Build/PQ1A.181105.017.A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 9; Pixel 3 Build/PQ1A.181105.017.A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.75,
         'vp' => [
@@ -1333,7 +1333,7 @@ return [
         ],
     ],
     'Pixel 4' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 10; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 10; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1346,7 +1346,7 @@ return [
         ],
     ],
     'Pixel 4a (5G)' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 11; Pixel 4a (5G)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 11; Pixel 4a (5G)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.63,
         'vp' => [
@@ -1363,7 +1363,7 @@ return [
         ],
     ],
     'Pixel 5' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.75,
         'vp' => [
@@ -1380,7 +1380,7 @@ return [
         ],
     ],
     'Pixel 6' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1397,7 +1397,7 @@ return [
         ],
     ],
     'Pixel 6 Pro' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.5,
         'vp' => [
@@ -1414,7 +1414,7 @@ return [
         ],
     ],
     'Pixel 6a' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 12; Pixel 6a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1431,7 +1431,7 @@ return [
         ],
     ],
     'Pixel 7' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1448,7 +1448,7 @@ return [
         ],
     ],
     'Pixel 7 Pro' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 13; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 13; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.5,
         'vp' => [
@@ -1465,7 +1465,7 @@ return [
         ],
     ],
     'Pixel 7a' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 13; Pixel 7a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 13; Pixel 7a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1482,7 +1482,7 @@ return [
         ],
     ],
     'Pixel 8' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1499,7 +1499,7 @@ return [
         ],
     ],
     'Pixel 8 Pro' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1516,7 +1516,7 @@ return [
         ],
     ],
     'Pixel 8a' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 8a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 2.625,
         'vp' => [
@@ -1533,7 +1533,7 @@ return [
         ],
     ],
     'Pixel 9' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1550,7 +1550,7 @@ return [
         ],
     ],
     'Pixel 9 Pro' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1567,7 +1567,7 @@ return [
         ],
     ],
     'Pixel 9 Pro XL' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1584,7 +1584,7 @@ return [
         ],
     ],
     'Pixel 10' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1601,7 +1601,7 @@ return [
         ],
     ],
     'Pixel 10 Pro' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
@@ -1618,7 +1618,7 @@ return [
         ],
     ],
     'Pixel 10 Pro XL' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.34 Mobile Safari/537.36',
+        'ua' => 'Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.54 Mobile Safari/537.36',
         'dbt' => 'chromium',
         'sf' => 3.0,
         'vp' => [
