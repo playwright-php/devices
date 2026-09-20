@@ -1,5 +1,6 @@
 /.phpunit.cache/
 /vendor/
+/data/deviceDescriptorsSource.json
 /.php-cs-fixer.cache
 /composer.lock
 /phpstan.neon

@@ -1,0 +1,65 @@
+name: "Nightly"
+
+on:
+  schedule:
+    - cron: "27 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  descriptors:
+    name: "Device descriptors"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Git: checkout"
+        uses: actions/checkout@v4
+
+      - name: "PHP: setup 8.4"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.4"
+          coverage: none
+
+      - name: "Node: setup"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: "Playwright: resolve latest stable"
+        id: resolve
+        run: |
+          version=$(npm view playwright version)
+          case "$version" in
+            [0-9]*.[0-9]*.[0-9]*) ;;
+            *) echo "::error::could not resolve the latest Playwright version"; exit 1 ;;
+          esac
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Latest stable Playwright is $version"
+
+      - name: "Devices: verify latest stable"
+        env:
+          PLAYWRIGHT_VERSION: ${{ steps.resolve.outputs.version }}
+        run: php bin/check-devices.php --playwright-version="$PLAYWRIGHT_VERSION" | tee device-descriptors-report.md
+
+      - name: "Summary"
+        if: always()
+        env:
+          VERSION: ${{ steps.resolve.outputs.version }}
+          STATUS: ${{ job.status }}
+        run: |
+          if [ -f device-descriptors-report.md ]; then
+            cat device-descriptors-report.md >> "$GITHUB_STEP_SUMMARY"
+            echo >> "$GITHUB_STEP_SUMMARY"
+          fi
+          {
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Latest Playwright | \`${VERSION:-unresolved}\` |"
+            echo "| Result | $STATUS |"
+          } >> "$GITHUB_STEP_SUMMARY"

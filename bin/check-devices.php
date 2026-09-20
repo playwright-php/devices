@@ -23,45 +23,38 @@ use function Playwright\Device\Update\loadDeviceCatalog;
 use function Playwright\Device\Update\normalizeDevices;
 use function Playwright\Device\Update\parsePlaywrightVersion;
 use function Playwright\Device\Update\readRecordedPlaywrightVersion;
-use function Playwright\Device\Update\relativePath;
 use function Playwright\Device\Update\sourceUrl;
-use function Playwright\Device\Update\writeDevicesFile;
-use function Playwright\Device\Update\writeJsonFile;
-use function Playwright\Device\Update\writeVersionFile;
 
 $rootDir = dirname(__DIR__);
-$jsonPath = $rootDir.'/data/deviceDescriptorsSource.json';
 $devicesPath = $rootDir.'/data/devices.php';
 $versionPath = $rootDir.'/data/playwright-version.txt';
 
 try {
     $arguments = commandArguments($_SERVER['argv'] ?? null);
-    $playwrightVersion = [] === $arguments ? latestPlaywrightVersion() : parsePlaywrightVersion($arguments);
+    $recordedVersion = readRecordedPlaywrightVersion($versionPath);
+    $expectedVersion = [] === $arguments ? latestPlaywrightVersion() : parsePlaywrightVersion($arguments);
     $currentDevices = loadDeviceCatalog($devicesPath);
-    $currentVersion = is_file($versionPath) ? readRecordedPlaywrightVersion($versionPath) : null;
-    $json = downloadDescriptors(sourceUrl($playwrightVersion));
 
+    $json = downloadDescriptors(sourceUrl($expectedVersion));
     $decoded = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
     if (!is_array($decoded)) {
         throw new UnexpectedValueException('Playwright descriptors must decode to an object.');
     }
 
-    $normalized = normalizeDevices($decoded);
-    fwrite(STDOUT, formatDeviceCatalogDiff(compareDeviceCatalogs($currentDevices, $normalized), $currentVersion, $playwrightVersion));
+    $expectedDevices = normalizeDevices($decoded);
+    $diff = compareDeviceCatalogs($currentDevices, $expectedDevices);
+    fwrite(STDOUT, formatDeviceCatalogDiff($diff, $recordedVersion, $expectedVersion));
 
-    writeJsonFile($jsonPath, $json);
-    writeDevicesFile($devicesPath, $normalized, $playwrightVersion);
-    writeVersionFile($versionPath, $playwrightVersion);
+    if ($recordedVersion !== $expectedVersion || $currentDevices !== $expectedDevices) {
+        $updateCommand = [] === $arguments
+            ? 'php bin/update-devices.php'
+            : sprintf('php bin/update-devices.php --playwright-version=%s', $expectedVersion);
 
-    fwrite(STDOUT, sprintf(
-        "Updated %s, %s and %s from Playwright v%s\n",
-        relativePath($jsonPath),
-        relativePath($devicesPath),
-        relativePath($versionPath),
-        $playwrightVersion,
-    ));
+        throw new RuntimeException('Device descriptors are out of date. Run: '.$updateCommand);
+    }
+
+    fwrite(STDOUT, sprintf('Device descriptors are up to date with Playwright v%s.'.PHP_EOL, $expectedVersion));
 } catch (Throwable $e) {
     fwrite(STDERR, 'Error: '.$e->getMessage().PHP_EOL);
-    fwrite(STDERR, 'Usage: php bin/update-devices.php [--playwright-version=<version>]'.PHP_EOL);
     exit(1);
 }
