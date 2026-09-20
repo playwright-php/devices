@@ -77,6 +77,10 @@ Use `DeviceRegistry::has()` to check a name and `DeviceRegistry::all()` to retri
 
 The generated [device catalog](docs/DEVICES.md) lists every available descriptor and its browser, screen, viewport, scale, mobile, and touch values.
 
+Each catalog is generated from an explicit stable Playwright release. The source version is recorded in [`data/playwright-version.txt`](data/playwright-version.txt); generation never follows Playwright's moving `main` branch.
+
+This package follows SemVer independently of Playwright. A catalog update is released as a new minor version because it changes the public descriptor data; matching Playwright and package version numbers is not implied.
+
 Device descriptors emulate browser-visible properties. They do not reproduce physical hardware, operating-system UI, network conditions, or device performance.
 
 ## Documentation
@@ -94,6 +98,24 @@ vendor/bin/php-cs-fixer fix --dry-run --diff
 vendor/bin/phpstan analyse
 vendor/bin/phpunit
 ```
+
+To refresh the catalog for a stable Playwright release:
+
+```bash
+php bin/update-devices.php
+php bin/update-docs.php
+vendor/bin/php-cs-fixer fix
+```
+
+Verify the committed catalog without modifying it:
+
+```bash
+php bin/check-devices.php
+```
+
+Both commands resolve the latest stable Playwright version from npm. Pass `--playwright-version=1.63.0` only when reproducing a specific historical snapshot.
+
+The nightly workflow runs the check automatically. It fails when the recorded source version is behind or when the committed catalog does not match its recorded release.
 
 ## License
 

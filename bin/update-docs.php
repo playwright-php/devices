@@ -19,6 +19,16 @@ use Playwright\Device\DeviceRegistry;
 
 $rootDir = dirname(__DIR__);
 $outputPath = $rootDir.'/docs/DEVICES.md';
+$versionPath = $rootDir.'/data/playwright-version.txt';
+
+if (!is_file($versionPath)) {
+    throw new RuntimeException(sprintf('Playwright version file "%s" does not exist. Run bin/update-devices.php first.', $versionPath));
+}
+
+$playwrightVersion = trim((string) file_get_contents($versionPath));
+if (1 !== preg_match('/^\d+\.\d+\.\d+$/D', $playwrightVersion)) {
+    throw new RuntimeException(sprintf('Invalid Playwright version "%s" in %s.', $playwrightVersion, $versionPath));
+}
 
 $registry = new DeviceRegistry();
 $devices = $registry->all();
@@ -30,7 +40,7 @@ uasort($devices, function (Device $a, Device $b): int {
 $lines = [];
 $lines[] = '# Device Catalogue';
 $lines[] = '';
-$lines[] = 'Generated from Playwright\'s upstream device descriptors ('.date('Y-m-d').').';
+$lines[] = sprintf('Generated from Playwright v%s device descriptors.', $playwrightVersion);
 $lines[] = '';
 $lines[] = '| Device | Browser | Screen | Scale | Viewport | Landscape | Mobile | Touch |';
 $lines[] = '| --- | --- | --- | --- | --- | --- | --- | --- |';
@@ -69,6 +79,9 @@ file_put_contents($outputPath, implode(PHP_EOL, $lines).PHP_EOL);
 
 echo 'Updated '.relativePath($outputPath).PHP_EOL;
 
+/**
+ * @param array{width: int, height: int}|null $dimensions
+ */
 function formatDimensions(?array $dimensions, string $emptyValue = 'n/a'): string
 {
     if (null === $dimensions) {

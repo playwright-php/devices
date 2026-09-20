@@ -1,6 +1,6 @@
 # Device Catalogue
 
-Generated from Playwright's upstream device descriptors (2026-08-24).
+Generated from Playwright v1.63.0 device descriptors.
 
 | Device | Browser | Screen | Scale | Viewport | Landscape | Mobile | Touch |
 | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -1,9 +1,7 @@
 name: "Update devices"
 
 on:
-  # schedule:
-  #  - cron: '0 2 * * *' # Every night at 02:00 UTC
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   update:
@@ -24,7 +22,31 @@ jobs:
         run: composer update --no-interaction --prefer-dist
 
       - name: Update device descriptors
-        run: php bin/update-devices.php
+        run: php bin/update-devices.php | tee device-descriptors-report.md
 
       - name: Update markdown files
         run: php bin/update-docs.php
+
+      - name: Format generated files
+        run: vendor/bin/php-cs-fixer fix
+
+      - name: Validate generated changes
+        run: git diff --check
+
+      - name: Write summary
+        if: always()
+        run: |
+          if [ -f device-descriptors-report.md ]; then
+            cat device-descriptors-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Create update patch
+        run: git diff --binary > device-descriptors.patch
+
+      - name: Upload update patch
+        uses: actions/upload-artifact@v4
+        with:
+          name: device-descriptors-update
+          path: device-descriptors.patch
+          if-no-files-found: error
+          retention-days: 7
