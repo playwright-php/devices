@@ -93,6 +93,10 @@ function download(string $url): string
 {
     if (function_exists('curl_init')) {
         $handle = curl_init($url);
+        if (false === $handle) {
+            throw new \RuntimeException('Failed to initialize cURL.');
+        }
+
         curl_setopt_array($handle, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
